@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact | Sofiane Berkani</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html">Sofiane Berkani</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="over-mij.html">Over mij</a></li>
+                <li><a href="projecten.html">Projecten</a></li>
+                <li><a href="werkplekleren.html">Werkplekleren</a></li>
+                <li><a href="contact.html" class="actief">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact</h1>
+        <p>Heb je een vraag, een stageplaats of een project? Stuur me een bericht.</p>
+
+        <form action="mailform.php" method="POST">
+            <label for="name">Naam</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Bericht</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Verstuur bericht</button>
+        </form>
+
+        <section>
+            <h2>Liever rechtstreeks?</h2>
+            <p>
+                Mail naar <a href="mailto:sofiane4578@gmail.com">sofiane4578@gmail.com</a>
+                of stuur me een bericht op <a href="https://www.linkedin.com/in/sofiane-berkani-8ab479326">LinkedIn</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Student <a href="https://thomasmore.be/opleidingen/graduaat/programmeren-dag-avondonderwijs/programmeren-dagonderwijs/antwerpen-0">Graduaat Programmeren aan Thomas More</a> in Antwerpen</p>
+        <ul>
+            <li><a href="https://github.com/SofianeBerkani">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/sofiane-berkani-8ab479326">LinkedIn</a></li>
+            <li><a href="https://s-itsolutions.be">S-IT Solutions</a></li>
+            <li><a href="mailto:sofiane4578@gmail.com">sofiane4578@gmail.com</a></li>
+        </ul>
+        <p>&copy; 2026 Sofiane Berkani</p>
+    </footer>
+</body>
+</html>

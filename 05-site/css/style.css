@@ -1,0 +1,209 @@
+/* Kleuren: oranje #fa6432 (accent), donkerblauw #00283c (basis), #000a1e (tekst) */
+
+body {
+    margin: 0;
+    font-family: "Century Gothic", sans-serif;
+    color: #000a1e;
+    background-color: #f7f4f1;
+}
+
+/* ---------- Header en menu ---------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
+    background-color: #00283c;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+header a {
+    color: white;
+    border-bottom: none;
+}
+
+.logo {
+    font-size: 22px;
+}
+
+.actief {
+    color: #fa6432;
+    border-bottom: 2px solid #fa6432;
+}
+
+/* ---------- Inhoud ---------- */
+main {
+    padding: 40px 15%;
+}
+
+h1 {
+    font-size: 40px;
+    color: #00283c;
+}
+
+h2 {
+    font-size: 26px;
+    color: #00283c;
+}
+
+h3 {
+    font-size: 18px;
+    color: #fa6432;
+    margin-bottom: 5px;
+}
+
+p,
+li {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+a {
+    color: #00283c;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #fa6432;
+}
+
+a:hover {
+    color: #fa6432;
+}
+
+/* ---------- Home: foto en intro naast elkaar ---------- */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.profielfoto {
+    width: 220px;
+    border-radius: 50%;
+    border: 4px solid #fa6432;
+}
+
+/* ---------- Knoppen ---------- */
+.knop {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-right: 10px;
+    border: 2px solid #fa6432;
+    border-radius: 8px;
+    background-color: #fa6432;
+}
+
+.knop:hover {
+    background-color: #00283c;
+    color: white;
+}
+
+/* ---------- Kaarten (diensten en projecten) ---------- */
+.kaarten {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.kaart {
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e3ddd7;
+    border-radius: 8px;
+}
+
+.kaart img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* ---------- Projectdetail: screenshots ---------- */
+.screenshots {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+
+figure {
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    border: 1px solid #e3ddd7;
+}
+
+/* ---------- Contactformulier ---------- */
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #00283c;
+}
+
+input,
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid #e3ddd7;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fa6432;
+    color: #00283c;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00283c;
+    color: white;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    padding: 30px 15%;
+    background-color: #00283c;
+    color: white;
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    list-style: none;
+}
+
+footer a {
+    color: white;
+}

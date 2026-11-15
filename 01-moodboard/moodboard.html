@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Moodboard | Portfolio Sofiane Berkani</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 3rem;
+        font-family: "Century Gothic", sans-serif;
+        background: #f7f4f1;
+        color: #000a1e;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 2.5rem;
+        color: #00283c;
+      }
+      h2 {
+        color: #00283c;
+        border-bottom: 4px solid #fa6432;
+        display: inline-block;
+        padding-bottom: 0.2rem;
+      }
+      .raster {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+      }
+      .blok {
+        background: #fff;
+        border: 1px solid #e3ddd7;
+        border-radius: 8px;
+        padding: 1.25rem;
+      }
+      .kleur {
+        height: 120px;
+        border-radius: 8px;
+        margin-bottom: 0.75rem;
+        border: 1px solid #e3ddd7;
+      }
+      .woorden {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        padding: 0;
+        list-style: none;
+      }
+      .woorden li {
+        background: #00283c;
+        color: #fff;
+        padding: 0.5rem 1.2rem;
+        border-radius: 999px;
+        font-size: 1.1rem;
+      }
+      .foto {
+        width: 100%;
+        border-radius: 50%;
+        border: 5px solid #fa6432;
+      }
+      .knop {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        border-radius: 8px;
+        font-weight: bold;
+        border: 2px solid #fa6432;
+        background: #fa6432;
+        color: #00283c;
+      }
+      .knop2 {
+        background: transparent;
+        border-color: #00283c;
+      }
+      .inspiratie {
+        min-height: 180px;
+        display: grid;
+        place-items: center;
+        text-align: center;
+        color: #4a5560;
+        border: 2px dashed #c9c0b8;
+        border-radius: 8px;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Moodboard: portfolio Sofiane Berkani</h1>
+    <p>
+      Doelgroep: werkgevers en stagebegeleiders in IT. Gevoel: professioneel,
+      rustig, technisch, maar met een warme accent.
+    </p>
+
+    <h2>Sfeer</h2>
+    <ul class="woorden">
+      <li>professioneel</li>
+      <li>betrouwbaar (security)</li>
+      <li>rustig en overzichtelijk</li>
+      <li>warm accent</li>
+      <li>modern, geometrisch</li>
+    </ul>
+
+    <h2>Kleuren</h2>
+    <div class="raster">
+      <div class="blok">
+        <div class="kleur" style="background: #00283c"></div>
+        <strong>Navy #00283c</strong><br />Basis: header, footer, titels. Staat
+        voor vertrouwen en techniek.
+      </div>
+      <div class="blok">
+        <div class="kleur" style="background: #fa6432"></div>
+        <strong>Oranje #fa6432</strong><br />Accent: knoppen, actief menu-item,
+        streepjes. Trekt de aandacht naar acties.
+      </div>
+      <div class="blok">
+        <div class="kleur" style="background: #f7f4f1"></div>
+        <strong>Warm wit #f7f4f1</strong><br />Achtergrond: zachter dan puur
+        wit, minder hard voor de ogen.
+      </div>
+      <div class="blok">
+        <div class="kleur" style="background: #000a1e"></div>
+        <strong>Bijna zwart #000a1e</strong><br />Lopende tekst: hoog contrast,
+        goed leesbaar.
+      </div>
+    </div>
+    <p>
+      Contrast: navy op oranje = 5,1:1 en navy op wit &gt; 14:1 (WCAG AA
+      gehaald).
+    </p>
+
+    <h2>Typografie</h2>
+    <div class="raster">
+      <div class="blok" style="grid-column: span 2">
+        <p
+          style="font-size: 3rem; font-weight: bold; color: #00283c; margin: 0"
+        >
+          Aa Century Gothic
+        </p>
+        <p>
+          Geometrische schreefloze letter: strak en modern, past bij een
+          technisch profiel. Eén lettertype voor de hele site, contrast via
+          grootte en gewicht (bold titels, normale tekst).
+        </p>
+      </div>
+      <div class="blok" style="grid-column: span 2">
+        <p
+          style="font-size: 40px; font-weight: bold; color: #00283c; margin: 0"
+        >
+          Titel 40px
+        </p>
+        <p
+          style="
+            font-size: 18px;
+            font-weight: bold;
+            color: #fa6432;
+            margin: 0.5rem 0;
+          "
+        >
+          Tussentitel 18px
+        </p>
+        <p style="margin: 0">Lopende tekst 17px, regelhoogte 1,6.</p>
+      </div>
+    </div>
+
+    <h2>Beeld en elementen</h2>
+    <div class="raster">
+      <div class="blok">
+        <img
+          class="foto"
+          src="../05-site/img/foto.jpg"
+          alt="Profielfoto met oranje rand"
+        />
+        <p>Ronde foto met oranje rand: persoonlijk, herkenbaar.</p>
+      </div>
+      <div class="blok">
+        <p><span class="knop">Primaire knop</span></p>
+        <p><span class="knop knop2">Secundaire knop</span></p>
+        <p>Afgeronde hoeken (8px), duidelijk klikbaar.</p>
+      </div>
+      <div class="blok">
+        <p style="font-weight: bold; color: #00283c; margin: 0">
+          Witte kaarten
+        </p>
+        <p>Lichte rand, veel witruimte, inhoud gegroepeerd (nabijheid).</p>
+      </div>
+      <div class="blok">
+        <p style="font-weight: bold; color: #fa6432; margin: 0">
+          Oranje tussentitels
+        </p>
+        <p>
+          Functies en diensten in het oranje, titels in donkerblauw: herhaling
+          en contrast.
+        </p>
+      </div>
+    </div>
+
+    <h2>Inspiratie</h2>
+    <div class="raster">
+      <div class="inspiratie">
+        Voeg hier een screenshot toe van een portfolio dat je mooi vindt
+      </div>
+      <div class="inspiratie">
+        Voeg hier een screenshot toe van een site met navy + oranje
+      </div>
+      <div class="inspiratie">
+        Voeg hier een foto toe die de sfeer weergeeft (bv. werkplek, code)
+      </div>
+      <div class="inspiratie">
+        Voeg hier een voorbeeld van typografie of lay-out toe
+      </div>
+    </div>
+  </body>
+</html>
